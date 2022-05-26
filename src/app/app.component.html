@@ -78,6 +78,8 @@
       <label><b>Kilomiters</b></label>
       <div>
         {{ miles | convert }} <br>
+        {{ miles | convert: "m" }} <br>
+        {{ miles | convert: "mm" }} <br>
       </div>
     </div>
   </div>
