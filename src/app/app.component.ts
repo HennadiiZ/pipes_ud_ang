@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'pipes_ud';
+  
+  name!: string;
+  date!: string;
+  
+  onNameChange(value: any){
+      this.name = value.value;
+  }
+
+  onDateChange(value: any){
+    this.date = value.value;
+}
 }
